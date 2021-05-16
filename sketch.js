@@ -10,7 +10,7 @@ var sword, swordImg;
 var hb1,hb2,hb3,hb4,hb5,hb6,hb7,hb8,hb9,hb10;
 var e1, e2, e3, enemies, enemiesGroup;
 var restart, restartImg;
-
+var hbImg;
 var score=0;
 var horcrux=0;
 var clickSound;
@@ -29,6 +29,9 @@ function preload(){
   hor5Img = loadImage("hor5.png");
   hor6Img = loadImage("hor6.png");
   hor7Img = loadImage("hor7.png");
+
+hbImg = loadImage("hb.png");
+
   swordImg = loadImage("Sword.png");
   e1=loadImage("enemies/bellatrix lestrange.png");
   e2=loadImage("enemies/draco malfoy.png");
@@ -47,34 +50,53 @@ function setup(){
   harry.scale=0.2;
   
   hb1 = createSprite(790,600,50,50);
-  hb1.shapeColor="red";
+  hb1.scale=0.14;
+  hb1.addImage(hbImg);
+
   hb2 = createSprite(185,520,50,50);
-  hb2.shapeColor="black";
+  hb2.scale=0.14;
+  hb2.addImage(hbImg);
+
   hb3 = createSprite(225,225,50,50);
-  hb3.shapeColor="red";
+  hb3.scale=0.14;
+  hb3.addImage(hbImg);
+
   hb4 = createSprite(395,175,50,50);
-  hb4.shapeColor="black";
+  hb4.scale=0.14;
+  hb4.addImage(hbImg);
+
   hb5 = createSprite(590,175,50,50);
-  hb5.shapeColor="red";
+  hb5.scale=0.14;
+  hb5.addImage(hbImg);
+
   hb6 = createSprite(490,390,50,50);
-  hb6.shapeColor="red";
+  hb6.scale=0.14;
+  hb6.addImage(hbImg);
+
   hb7 = createSprite(790,490,50,50);
-  hb7.shapeColor="black";
+  hb7.scale=0.14;
+  hb7.addImage(hbImg);
+
   hb8 = createSprite(60,515,50,50);
-  hb8.shapeColor="red";
+  hb8.scale=0.14;
+  hb8.addImage(hbImg);
+
   hb9 = createSprite(400,390,50,50);
-  hb9.shapeColor="black";
+  hb9.scale=0.14;
+  hb9.addImage(hbImg);
+
   hb10 = createSprite(695,165,50,50);
-  hb10.shapeColor="black";
+  hb10.scale=0.14;
+  hb10.addImage(hbImg);
 
   gameover = createSprite(380,320);
   gameover.addImage(gameoverImg);
   gameover.scale= 2;
   gameover.visible=false;
 
-  gameover2 = createSprite(340,320);
+  gameover2 = createSprite(337,320);
   gameover2.addImage(gameover2Img);
-  gameover2.scale= 1.1;
+  gameover2.scale= 1;
   gameover2.visible=false;
 
   hor1 = createSprite(790, 600);
