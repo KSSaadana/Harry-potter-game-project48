@@ -94,9 +94,9 @@ function setup(){
   gameover.scale= 2;
   gameover.visible=false;
 
-  gameover2 = createSprite(337,320);
+  gameover2 = createSprite(340,320);
   gameover2.addImage(gameover2Img);
-  gameover2.scale= 1;
+  gameover2.scale= 1.05;
   gameover2.visible=false;
 
   hor1 = createSprite(790, 600);
