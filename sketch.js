@@ -720,7 +720,7 @@ function serve(){
   text("When he solves the maze, voldemort will get killed",70,240);
   text(" and all his friends and parents will get released",70,260);
   text("But, there is a lot of rules, they are:",70,280);
-  text("The small squares are the horcrux boxes. The horcrux is inside it",70,300);
+  text("The horcrux is inside the small horcrux boxes. ",70,300);
   text("You can move harry with the arrow keys",70,320);
   text("As you destroy horcruxes, the walls would get vanished for you to enter",70,340);
   text("But, it is not that easy - harry's enemies will get appeared on the maze.",70,360);
